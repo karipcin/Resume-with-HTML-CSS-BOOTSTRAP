@@ -1,0 +1,375 @@
+<!doctype html>
+<!--Belge türü bildirimi.-->
+<html lang="en">
+    <!--Belge dili İngilizce.-->
+  <head>
+    <!--Başlık bölümünde tarayıcıya belge hakkında meta bilgileri ve stil dosyaları icerir.-->
+    <meta charset="utf-8">
+    <!--Tarayıcıya ve diğer programlara sayfa hk ek bilgiler sağlamak icin kullanılır ve kullanıcı tarafından görüntülenemez. UTF-8 geniş bir karakter kümesi kodlama standardıdır.-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--Mobile cihazlarda doğru ölceklendirme ve görüntüleme icin belgenin görünümünü ayarlar.-->
+    <meta name="keywords" content="Esma, Melike, Karipcin, software, GIS, Geomatics, Engineering">
+    <title>Esma Melike Karipcin CV</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!--Bootstrap framework'ünün stil dosyasını ekledik.-->
+    <link rel="stylesheet" href="style.css">
+    <!--Kendi stil dosyamızı ekledik.-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--Font Awesome ikon kütüphanesinin stil dosyasını ekler. Bu şekilde cesitli ikonları kullanabiliriz.-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <!--Bootstrap Icons kütüphanesinin CSS dosyasını ekledik.-->
+    
+  </head>
+  <body>
+
+    <nav id="navbar" class="navbar navbar-lg navbar-expand-md navbar-light border-bottom my-auto py-4">
+    <!--Gezi menüsü yapacağız. id ile menüyü hedefledik. class ile bir dizi sınıf ekledik. Bu sınıflar menüyü düzen ve tasarım acısından özelleştirmek icin kullanılır.-->    
+        <div class="container-xxl ">
+            <!--Ekran boyutuna göre dinamik bir şekilde içeriğin genişliğini ayarladık ve geniş ekranlı cihazlarda tam genişlikte bir görünüm sağladık.-->
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mobile">
+                <!--Gezinti menüsünün mobil uyumlu bir sekilde acılıp kapanmasını sağlayan bir düğme. toggle ve target öznitelikleri, düğme tıklandığında hangi bölümün acılıp kapanacağını belirtir.-->
+                <i class="bi bi-list"></i>
+            </button>
+
+            <div id="mobile" class="collapse navbar-collapse ">
+                <!--Mobil uyumlu menünün iceriğini gruplamak icin kullanılan bir etiket. mobile kimliği düğmeyle ilişkilendirilmiş hedef bölümünü belirtir.-->
+                <a href="index.html" class="navbar-brand fw-bold"><b>ESMA MELIKE KARIPCIN</b></a>
+                <!--Sayfanın ana marka/logo bağlantısı.-->
+                <ul class="navbar-nav ms-auto">
+                    <!-- ms-auto yani margin start auto, otomatik olarak navbardakileri sağa hizaladı.-->
+                    <li class="nav-item mx-3"><a href="#header" class="magenta nav-link"><b>About Me</b></a></li>
+                    <!--mx-3 ile margin ayarlayıp kenarlardan 3er birimlik boşluk yaptık.-->
+                    <li class="nav-item mx-3"><a href="#experience" class="nav-link">Experience</a></li>
+                    <li class="nav-item mx-3"><a href="#skills" class="nav-link">Skills</a></li>
+                    <li class="nav-item mx-3"><a href="#projects" class="nav-link">Projects</a></li>
+                    <li class="nav-item mx-3"><a href="#dowload-button" class="nav-link">CV</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div id="header" class="container">
+        <!--İceriğin bir container icinde sınırlanmasını sağlar.-->
+        <div class="text-center pt-5 mt-5 ">
+            <!--Metinleri merkezledik, bölümün üst tarafından boşluk bıraktırdık. mt(margin-top) üst taraftan verilecek boşlığu temsil eder.-->
+            <h1 class="display-3 fw-bold text-center ">Fullstack Developer</h1>
+            <!--Bold ve centerladık.-->
+            <div class="lead fs-5 pb-3">Geomatics Engineering student who interested in software development.</div>
+            <!--Lead sınıfı ile metni vurguladık. fs(metin boyutu belirler) ile metne biraz daha büyük bir font boyutu verdik. pb(padding-bottom) ile alt tarafından biraz boşluk bıraktık.-->
+        </div>
+        <img src="http://drive.google.com/uc?export=view&id=1HHJ9vIr6ygMRqR45g-nEH8ViB8j8xLZZ" alt="picture" id="my-pic" class="rounded-circle mt-5 d-flex justify-content-center mx-auto">
+            <!--Fotoğrafı yuvarlak göstermek icin rounded-circle. mx-auto resmi dikey ve yatay merkezlemek icin kullandık.-->
+        <div class="d-flex justify-content-center mt-4 mx-auto">
+            <!--d-flex sınıfı ile icerik elemanlarını yan yana hizaladık. justify content center ile iceriği yatay olarak merkezledik.-->
+            <div class="mx-4 ps-5">
+                <!--class acıp mx ile sağ ve soldan boşluk bıraktık. ps ile iceriğin sol tarafından boşluk bıraktık.-->
+                <span class="d-flex justify-content-end fs-2">Phone</span>
+                <!--iceriği sağa hizaladık. fs ile daha büyük font boyutu verdik.-->
+                <span class="d-flex justify-content-end lead">+90 535 313 2361</span>
+                <!--lead ile metne daha kalın bir boyut verdik.-->
+            </div>
+            <div class="vr"></div>
+            <!--vr ile dikey bir cizgi verdik.-->
+                <div class="mx-4">
+                    <span class="fs-2">E-Mail</span>
+                    <br>
+                    <span class="lead">esma.melike.karipcin@gmail.com</span>
+                </div>
+            </div>       
+    </div>
+
+    <div id="main" class="container-fluid bg-gray" >
+        <div class="col-lg-5 mx-auto my-5 py-5 text-center">
+            <h2 class="my-4 fw-bold">Hi, <span style="color: magenta;"><b>I'm Melike</b></span>. Nice to meet you.</h2>
+            <p class="w-100 fs-5 lead">I am a first year Geomatics Engineering student. After gaining experience in sales, digital marketing, e-mail marketing, corporate company and school career club, I work on user support in the IT department of my school. At the same time, I do projects for the software development group with using HTML, CSS, JavaScript, C#, SQL technologies. I play as receiver in Yildiz Technical University's American Flag Football team.</p>
+       <!--bg-gray sınıfı, arkaplan rengini gri olarak ayarlar. col-lg-5 ile sınıfı 5 sütuna ayarladık. my-5 ve py-5 sınıfları, icerik etrafında boşluk oluşturur.-->
+        </div>       
+    </div>
+
+    <div id="experience" class="container my-5 border-bottom">
+        <h3 class="my-5 text-center fw-bold pb-5 border-bottom container">EXPERIENCE</h3>
+        <div class="container pt-4 my-5 pb-5">
+            <div class="row mx-auto">
+                <div class="col-2 d-flex flex-column mt-4 order-md-2">
+                    <i class="bi bi-circle-fill mx-auto " style="color: magenta;"></i>
+                    <div class="vr mx-auto h-100"></div>
+                </div>
+                <div class="col-5 text-end mt-4 order-md-1"> 
+                    <span class="fs-5">2022 November - Present</span> 
+                    <br><br> 
+                    <span class="lead">Student Assistant</span> 
+                </div>        
+                <div class="col-5 mt-4 text-start order-md-3"> 
+                    <span class="fs-5">ITU IT HEAD OFFICE</span>  
+                    <br><br> 
+                    <span class="lead fs-6">Consulting and providing operator support for user problems related to the internet service and software provided by the department. At the same time, making projects for the software development group.</span>
+                    <br><br>
+                </div>
+            </div>
+            <div class="row mx-auto">
+                <div class="col-2 d-flex flex-column mt-1 order-md-2">
+                    <i class="bi bi-circle-fill mx-auto " style="color: magenta;"></i>
+                    <div class="vr mx-auto h-100"></div>
+                </div>
+                <div class="col-5 text-end mt-1 order-md-1">
+                    <span class="fs-5">2022 August - 2022 October</span>
+                    <br><br>
+                    <span class="lead">Sales Support Assistant - Social Media Manager</span>
+                </div>
+                <div class="col-5 mt-1 text-start order-md-3"> 
+                    <span class="fs-5">Pancom GMBH</span>  
+                    <br><br>
+                    <span class="lead fs-6">International sales - Contacting and selling with international customers by calling and e-mail - Learning the stages of sales. Management and content production of social media channels of Pandora's medical product brand.</span>
+                    <br><br>
+                </div>
+            </div>
+            <div class="row mx-auto">
+                <div class="col-2 d-flex flex-column mt-1 order-md-2">
+                    <i class="bi bi-circle-fill mx-auto " style="color: magenta;"></i>
+                    <div class="vr mx-auto h-100"></div>
+                </div>
+                <div class="col-5 text-end mt-1 order-md-1">
+                    <span class="fs-5">2022 May - 2022 August</span>
+                    <br><br>
+                    <span class="lead">Marketing Intern</span>
+                </div>                               
+                <div class="col-5 mt-1 text-start order-md-3"> 
+                    <span class="fs-5">ENV IK Consultancy</span>  
+                    <br><br>
+                    <span class="lead fs-6">Marketing the company's services on the digital platforms, managing company's mailing list - Costumer Relationships.</span>
+                </div>
+            </div>
+        </div>       
+    </div>
+
+    <div id="skills" class="container my-5 pb-5">
+        <h3 class="my-5 text-center fw-bold pb-5 border-bottom container">SKILLS</h3>
+        <div class="row d-flex justify-content-center pt-5">
+            <div class="col-lg-6 mb-5 d-none d-md-block" >
+                <div class="row">
+                    <span class="lead">HTML</span> <br>
+                    <div class="col-10" style="position: relative;">                           
+                        <div class="progress" >
+                            <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 70%"></div>     
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <span> 70%</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 mb-5 d-none d-md-block">
+                <div class="row">
+                    <span class="lead">CSS</span> <br>
+                    <div class="col-10">      
+                        <div class="progress ">
+                            <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 70%"></div>     
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <span> 70%</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 mb-5">
+                <div class="row">
+                    <span class="lead">JavaScript</span> <br>
+                    <div class="col-10">                     
+                        <div class="progress ">
+                            <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 70%"></div>     
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <span> 70%</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 mb-5 d-none d-md-block">
+                <div class="row">
+                    <span class="lead">C#</span> <br>
+                    <div class="col-10">                       
+                        <div class="progress ">
+                            <div class="progress-bar " role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%"></div>     
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <span> 80%</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 mb-5">
+                <div class="row">
+                    <span class="lead">Python</span> <br>
+                    <div class="col-10">                       
+                        <div class="progress ">
+                            <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 70%"></div>     
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <span> 70%</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 mb-5 d-none d-md-block">
+                <div class="row">
+                    <span class="lead">ArcGIS</span> <br>
+                    <div class="col-10">                       
+                        <div class="progress">
+                            <div class="progress-bar " role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 50%"></div>     
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <span> 50%</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 mb-5">
+                <div class="row">
+                    <span class="lead">User Experience</span> <br>
+                    <div class="col-10">                        
+                        <div class="progress">
+                            <div class="progress-bar " role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 70%"></div>     
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <span> 70%</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 mb-5 d-none d-md-block">
+                <div class="row">
+                    <span class="lead">Sales - Marketing</span> <br>
+                    <div class="col-10">                      
+                        <div class="progress">
+                            <div class="progress-bar " role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%"></div>     
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <span> 80%</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+            
+    <div id="education" class="container-fluid my-5 pb-5 bg-gray">      
+        <h3 class="my-5 text-center fw-bold py-5 border-bottom container ">EDUCATION</h3>
+    
+
+           
+        <div class="d-flex justify-content-center">
+            <div class="my-3 py-3 row container ">
+                <div class="col-2 col-md-12 order-md-2">
+                    <div class="row row-cols-1 row-cols-md-2 h-100">
+                        <div class="col mb-3 d-md-flex text-center">
+                            <i class="bi bi-circle-fill mx-left " style="color: magenta;"></i><div class="hr-text"></div>
+                            <div class="row my-2 timeline" style="width: 90%;"></div>                 
+                        </div>
+                        <div class="col mb-3 d-md-flex text-center">
+                            <i class="bi bi-circle-fill mx-left " style="color: magenta;"></i><div class="hr-text"></div>
+                            <div class="row my-2 timeline" style="width: 90%;"></div>                 
+                        </div>
+                    </div>
+                </div>            
+                <div class="col-4 col-md-12 order-md-1">
+                    <div class="row row-cols-1 row-cols-md-2 h-100">
+                        <div class="col text-md-start"> <div class="fs-5">2021 - Present </div> <div class="my-2 text-muted fs-6">Bachelor of Engineering</div> </div>
+                        <div class="col text-md-start"> <div class="fs-5">2016 - 2020</div> <div class="my-2 text-muted fs-6">High School</div>  </div>
+                    </div>
+                </div>           
+                <div class="col-6 col-md-12 order-md-3">
+                    <div class="row row-cols-1 row-cols-md-2 h-100">
+                        <div class="col text-md-start"> <div class="fs-5">Istanbul Technical University</div> <div class="text-muted fs-6">Geomatics Engineering Department</div></div>
+                        <div class="col text-md-start"> <div class="fs-5">Fatih High School</div> <div class="text-muted fs-6">Math - Science Department</div></div>
+                    </div>
+                </div> 
+            </div>
+        </div>
+    </div>    
+  
+    <div id="projects" class="container pt-5">   
+        <h3 class="my-5 text-center fw-bold py-5 border-bottom border-top container">PROJECTS</h3>
+            <div class="row d-flex justify-content-center">
+                <div class="col-md-4 col-lg-4 item my-4">
+                    <div class="box">
+                        <div class="hovereffect">
+                                <img class="img-responsive" src="http://drive.google.com/uc?export=view&id=1jZtEIWYAZFl_RPdOsdip2sx5z-vTLRqK" alt="">
+                                <div class="overlay">
+                                   <h2>Project5</h2>
+                                   <h2>Lorem ipsum dolor sit amet.</h2>
+                                </div>                            
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-4 item my-4">
+                    <div class="box">
+                        <div class="hovereffect">
+                                <img class="img-responsive" src="http://drive.google.com/uc?export=view&id=1kW5J4ffFLn2txkqXxHXZCgUqHsZSbRPV" alt="">
+                                <div class="overlay">
+                                   <h2>Project5</h2>
+                                   <h2>Lorem ipsum dolor sit amet.</h2>
+                                </div>                            
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-4 item my-4">
+                    <div class="box">
+                        <div class="hovereffect">
+                                <img class="img-responsive" src="http://drive.google.com/uc?export=view&id=13XTGM5PdvEuTODxEG1XJ-V3XiSWeqmxu" alt="">
+                                <div class="overlay">
+                                   <h2>Project5</h2>
+                                   <h2>Lorem ipsum dolor sit amet.</h2>
+                                </div>                            
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-lg-4 item my-4">
+                    <div class="box">
+                        <div class="hovereffect">
+                                <img class="img-responsive" src="http://drive.google.com/uc?export=view&id=1U5RxREf2hsH286ACvEPM9G44_PG-mnPB" alt="">
+                                <div class="overlay">
+                                   <h2>Project5</h2>
+                                   <h2>Lorem ipsum dolor sit amet.</h2>
+                                </div>                            
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-lg-4 item my-4">
+                    <div class="box">
+                        <div class="hovereffect">
+                                <img class="img-responsive" src="http://drive.google.com/uc?export=view&id=1V-i5b4a4cVk0nu-yWvvA4Zm5EiXJja_f" alt="">
+                                <div class="overlay">
+                                   <h2>Project5</h2>
+                                   <h2>Lorem ipsum dolor sit amet.</h2>
+                                </div>                            
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-4 item my-4">
+                        <div class="hovereffect">
+                                <img class="img-responsive" src="http://drive.google.com/uc?export=view&id=1jZtEIWYAZFl_RPdOsdip2sx5z-vTLRqK" alt="">
+                                <div class="overlay">
+                                   <h2>Project4</h2>
+                                   <h2>Lorem ipsum dolor sit amet.</h2>
+                                </div>                            
+                        </div>
+                    </div>
+                </div>
+               
+            </div>
+    </div>
+
+
+    <div id="download-button" class="d-flex align-items-center justify-content-center my-5 py-5">
+    <a class="btn btn-link btn-lg purple fs-2" href="https://drive.google.com/uc?export=download&id=1SUbH6y-f7Uw_2YJwElvfI4g3CkwjeGiU" role="button">DOWNLOAD CV</a>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
+  </body>
+
+</html>
